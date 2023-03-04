@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { RIngContext } from '../Grandpa/GrandPa';
 
-const Wife = ({ring}) => {
+const Wife = () => {
+  const [house, setHouse] = useContext(RIngContext);
   return (
     <div>
       <p>My Wife</p>
-      <small>{ring}</small>
+      <p>{house}</p>
+      <button onClick={() => setHouse(house + 1)}>Increase House</button>
     </div>
   )
 }
