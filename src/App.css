@@ -23,6 +23,11 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.header a{
+  color: #b30707;
+  text-decoration: none;
+  margin-left: 20px;
+}
 
 .App-link {
   color: #61dafb;
